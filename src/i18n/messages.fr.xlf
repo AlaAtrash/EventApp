@@ -1,0 +1,4 @@
+<trans-unit id="myAccount" datatype="html">
+        <source>myAccount</source>
+        <target>Mon compte</target>
+</trans-unit>
