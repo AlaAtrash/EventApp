@@ -1,7 +1,9 @@
+@headerHeight = 56px;
+
 .appHeader {
 	position: fixed;
     background-color: red;
-    height: 56px;
+    height: 70px;
     top: 0;
     left: 0;
     width: 100%;
@@ -9,24 +11,25 @@
 
     .logo {
     	color: white;
-    	width: 10%;
-    	margin: 16px 50px;
-    	font-size: 21px;
-    	display: inline-block;
+        width: 10%;
+        margin: 22px 50px;
+        font-size: 25px;
+        display: inline-block;
     }
 
     .icons {
     	float: right;
-    	width: 15%;
-    	height: 56px;
+    	width: 250px;
+    	height: 70px;
 
     	.icon-size {
     		width: 50px;
     		height: 18px;
-   			margin-top: 20px;
+   			margin-top: 27px;
    			display: inline-block;
     	}
     	.search {
+    		margin-left: 25px;
     		float:left;
     		background-image: url("../assets/icons/search.png");    		
     	}
@@ -42,4 +45,31 @@
     	}
     }
 
+}
+
+.sideMenu {
+	position: fixed;
+    height: 100%;
+    width: 20%;
+    background-color: #F53B50;
+    top: 70px;
+    left: 0;
+
+    .userInfo {
+        text-align: center;
+        .avatarImg {
+            margin-top: 50px;
+        }
+        .cord {
+            color:white;
+            margin-top: 15px;
+
+            .name {
+                font-size: 20px;
+                margin-bottom:5px;  
+            }
+
+
+        }
+    }
 }
