@@ -1,4 +1,9 @@
 @headerHeight = 56px;
+@import "../sprite.less";
+.menuItems {
+    float: left;
+    margin-right: 15%;
+}
 
 .appHeader {
 	position: fixed;
@@ -19,29 +24,25 @@
 
     .icons {
     	float: right;
-    	width: 250px;
+    	width: 200px;
     	height: 70px;
 
     	.icon-size {
-    		width: 50px;
-    		height: 18px;
    			margin-top: 27px;
+            margin-right: 30px;
    			display: inline-block;
     	}
     	.search {
     		margin-left: 25px;
     		float:left;
-    		background-image: url("../assets/icons/search.png");    		
+    		    		
     	}
 
     	.setting {
-    		background-image: url("../assets/icons/search.png");    		
     	}
     	.home {
-    		background-image: url("../assets/icons/search.png");    		
     	}
     	.back {
-       		background-image: url("../assets/icons/search.png");    		
     	}
     }
 
@@ -88,11 +89,74 @@
 
         .myAccount {
             ::before {
-                content: url("../assets/icons/search.png");
-                float: left;
-                margin-right: 15%;
+                content: "";
+                .bg-ic_menu_user();
+                .menuItems();
 
             }
+        }
+
+        .allEvents {
+            ::before {
+                content: "";
+                .bg-ic_menu_calendar();
+                .menuItems();
+
+            }
+        }
+
+        .completedEvents {
+            ::before {
+                content: "";
+                .bg-ic_menu_calendar_completed();
+                .menuItems();
+
+            }
+        }
+
+         .settings {
+            ::before {
+                content: "";
+                .bg-ic_menu_settings();
+                .menuItems();
+
+            }
+        }
+
+        .paymentInfo {
+            ::before {
+                content: "";
+                .bg-ic_menu_credit_card();
+                .menuItems();
+
+            }
+        }
+
+        .notifications {
+            ::before {
+                content: "";
+                .bg-ic_menu__notification();
+                .menuItems();
+
+            }   
+        }
+
+        .inviteFriends {
+            ::before {
+                content: "";
+                .bg-ic_menu_friends();
+                .menuItems();
+
+            }  
+        }
+
+        .rate {
+            ::before {
+                content: "";
+                .bg-ic_menu_star();
+                .menuItems();
+
+            }  
         }
 
 
