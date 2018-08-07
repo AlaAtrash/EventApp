@@ -1,0 +1,111 @@
+.avatar {
+	border-radius: 150px;
+    width: 115px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rectagleBtn {
+	width: 140px;
+    height: 23px;
+    background-color: red;
+    margin-left: 146px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.infoBox {
+    background-color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.eventChart {
+    .chart {
+        float: left;
+        margin-right: 45px;
+    }
+    .stats {
+        .subject{
+            .sectionHeader();
+            padding-top: 20px;
+            font-size: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .accepted::before {
+            background-color: #F46A07;
+            .bullet();
+
+        }
+
+        .waiting::before {
+           background-color: #6DC6CD;
+           .bullet(); 
+       }
+
+       .decline::before {
+        background-color: #E8B71A;
+        .bullet();   
+    }
+}
+
+.total {
+    position: absolute;
+    top: 41px;
+    right: 38px;
+    font-size: 20px;
+    font-weight: bold;
+}    
+
+}
+
+.bullet {
+    content: "";
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.defaultBGcolor {
+    background-color: #FCFCFD;
+}
+
+.sectionHeader {
+    color:gray;
+}
+
+.socialSection {
+    padding: 20px 20px 60px 20px;
+    .icons {
+
+    }
+
+    .fbIcon {
+        .socialIcons();
+        background: url("./assets/pics/FB.jpg");   
+    }
+
+    .twitterIcon {
+        .socialIcons();
+        background: url("./assets/pics/Twitter.jpg");
+        margin-left: 6px;   
+    }
+
+    .socialIcons {
+        content: "";
+        width: 32px;
+        height: 32px;
+        background-repeat: no-repeat;
+        margin-top: 10px;
+        float: left;
+    }
+
+}

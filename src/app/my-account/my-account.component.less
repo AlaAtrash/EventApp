@@ -1,0 +1,62 @@
+@import "../../sprite.less";
+.accountPage {
+    margin-right: -8px;
+    /*.defaultBGcolor();*/
+    .content {
+        margin-left: 18%;
+        width: 40%;
+        padding-left: 0px;
+        padding-top: 50px;
+        border-right: 1px solid gray;
+        .acountInfo  {
+            width: 70%;
+            margin: auto;
+            .title {
+                border-bottom: 1px solid gray;
+                padding-bottom: 15px;
+                font-size: 19px;
+                ::before {
+                  content: "";
+                  float: left;
+                  margin-right: 20px;
+                  .bg-ic_back_arrow_gray();
+              }
+          }
+
+          .profileInfo {
+            .avatarImg {
+                float: left;
+                margin-right: 30px;
+            }
+            .cord {
+                margin-top: 30px;
+                padding-top: 15px;
+                .name {
+                    font-weight: bold;
+                }
+                .adress {
+
+                }
+
+                .edit {
+                   margin-top: 12px;     
+                }
+            }
+        } 
+
+        .about {
+            margin-top: 50px;
+
+            div {
+                font-size: 20px;
+                color: gray;
+                text-transform: uppercase;
+            }
+
+            p {
+                text-align: justify;
+            }
+        }   
+    }
+}  
+}

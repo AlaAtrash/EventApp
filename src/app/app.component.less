@@ -1,17 +1,19 @@
 @headerHeight = 56px;
 @import "../sprite.less";
+
 .menuItems {
     float: left;
     margin-right: 15%;
 }
 
 .appHeader {
-	position: fixed;
     background-color: red;
     height: 70px;
     top: 0;
     left: 0;
-    width: 100%;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -10px;
 
 
     .logo {
@@ -49,17 +51,14 @@
 }
 
 .sideMenu {
+    float: left;
     width: 20%;
     background-color: #F53B50;
-    margin-top: 70px;
     padding-top: 40px;
     margin-left: -15px;
 
     .userInfo {
         text-align: center;
-        .avatarImg {
-           
-        }
         .cord {
             color:white;
             margin-top: 15px;
@@ -77,6 +76,7 @@
 
     .navigation {
         .component {
+            cursor: pointer;
             border-bottom: 1px solid #b59494;
             font-size: 14px;
             color: white;
