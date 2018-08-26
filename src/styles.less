@@ -6,21 +6,69 @@
     margin-right: auto;
 }
 
+
 .rectagleBtn {
-	width: 140px;
-    height: 23px;
-    background-color: red;
-    margin-left: 146px;
     color: white;
     font-size: 14px;
     text-align: center;
+}
+
+.btnV1spec {
+    width: 140px;
+    height: 23px;
+    margin-left: 146px;
     padding-top: 5px;
+}  
+
+.rectagleBtnV1 {
+	.btnV1spec();
+    .rectagleBtn();
+    .redBG();
+}
+
+
+.btnV2_V3spec {
+    height: 30px;
+    width: 116px;
+    border-radius: 5px;
+    padding-top: 8px;
+} 
+.rectagleBtnV2Red {
+    .btnV2_V3spec();
+    .rectagleBtn();
+    .redBG();
+}
+
+.rectagleBtnV2Gray {
+    .btnV2_V3spec();
+    .rectagleBtn();
+    .grayBG();
+}
+
+.rectagleBtnV2Green {
+    .btnV2_V3spec();
+    .rectagleBtn();
+    .greenBG();
+}
+
+.redBG {
+    background-color: red;
+}
+
+.grayBG {
+   background-color: #C5D2D8;   
+}
+
+.greenBG {
+   background-color: #1FBB82;   
 }
 
 .infoBox {
     background-color: white;
     padding: 20px;
     position: relative;
+    box-shadow: 0px 0px 0px 2px #F6F6F6;
+    border-radius:5px;
 }
 
 .eventChart {
@@ -46,11 +94,11 @@
         }
 
         .waiting::before {
-           background-color: #6DC6CD;
-           .bullet(); 
-       }
+         background-color: #6DC6CD;
+         .bullet(); 
+     }
 
-       .decline::before {
+     .decline::before {
         background-color: #E8B71A;
         .bullet();   
     }
@@ -75,7 +123,7 @@
 }
 
 .defaultBGcolor {
-    background-color: #FCFCFD;
+    background-color: #FAFBFC;
 }
 
 .sectionHeader {
@@ -84,6 +132,7 @@
 
 .socialSection {
     padding: 20px 20px 60px 20px;
+    margin-top: 50px;
     .icons {
 
     }
@@ -109,3 +158,24 @@
     }
 
 }
+
+.content {
+    margin-left: 18%;
+    width: 40%;
+    padding-left: 0px;
+    padding-top: 50px;
+    border-right: 1px solid gray;
+
+    .size  {
+        width: 70%;
+        margin: auto;
+    }    
+}
+
+.eventActionBtns {
+    height: 21px;
+    width: 85px;
+    padding-top: 3px;
+    border-radius: 20px;
+    font-size: 13px;
+}        
