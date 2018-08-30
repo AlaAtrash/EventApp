@@ -1,27 +1,45 @@
 <div class="block infoBox">
 	<div class="eventInfo">
 		<div class="name">
-			Ballei Bllerson
+			{{name}}
 		</div>
 		<div class="eventType">
-			Birthday party
+			{{eventType}}
 		</div>
 		<div class="eventDate">
-			Event Date : 12/12/2019
+			<span i18n> Event Date : </span> {{date}}
 		</div>
-		<div class="participants">
-			13 are participating
+		<div class="participants grayText">
+			{{participents}} <span i18n> are participating</span>
 		</div>
 	</div>
 	<div class="eventActions">
-		<div class="eventState">
-			Closed in 3 days
+		<div [hidden]="isAcceptedEvent">
+			<div class="openState grayText">
+				<span i18n>Closed in </span>
+				{{eventAcceptExpiration}} 
+				<span i18n> days </span>
+			</div>
+			<div class="accept rectagleBtnV2Green eventActionBtns">
+				<span i18n> Accepte </span>
+			</div>
+			<div class="decline rectagleBtnV2Gray eventActionBtns">
+				<span i18n> Decline </span>
+			</div>
 		</div>
-		<div class="accept rectagleBtnV2Green eventActionBtns">
-			Accepte
-		</div>
-		<div class="decline rectagleBtnV2Gray eventActionBtns">
-			Decline
-		</div>
+
+		<div [hidden]="notAcceptedEvent">
+			<div class="acceptedState greenText">
+					<span i18n>Accepted </span>
+			</div>	
+			<div class="acceptedEvent">
+				<div class="accept rectagleBtnV2Red eventActionBtns">
+					<span i18n> View </span>
+				</div>
+				<div class="decline rectagleBtnV2Gray eventActionBtns">
+					<span i18n> Edit </span>
+				</div>
+			</div>
+		</div>		
 	</div>
 </div>

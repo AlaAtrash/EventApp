@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 
 @Component({
   selector: 'app-event-block',
@@ -8,14 +8,25 @@ import { Component, OnInit} from '@angular/core';
 
 export class EventBlockComponent implements OnInit {
 
-  name: string;
-  eventType: string;
-  eventDate: Date;
-  participents : number;
+@Input() name: string;
+@Input() isAcceptedEvent:boolean;
+@Input() notAcceptedEvent:boolean;
+@Input() eventType: string;
+@Input() participents : number;
+@Input() eventAcceptExpiration : number;
+@Input() eventDate: Date;
+
   	
-  constructor() { }
+  constructor() {
+
+   }
+
+  
 
   ngOnInit() {
+    console.log(this.isAcceptedEvent);
+     console.log(this.eventDate);
+     
   }
 
 }

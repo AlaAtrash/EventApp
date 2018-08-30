@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 //import {EventBlockComponent} from '../event-block/event-block.component';
 
 @Component({
@@ -9,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 
 
 export class AllEventsComponent implements OnInit {
+  
+  	
 
   constructor() { }
 

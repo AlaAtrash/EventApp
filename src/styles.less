@@ -1,3 +1,6 @@
+@greenColor:#1FBB82; ;
+@grayColor: #C5D2D8;
+
 .avatar {
 	border-radius: 150px;
     width: 115px;
@@ -28,7 +31,7 @@
 
 
 .btnV2_V3spec {
-    height: 30px;
+    height: 28px;
     width: 116px;
     border-radius: 5px;
     padding-top: 8px;
@@ -56,11 +59,11 @@
 }
 
 .grayBG {
-   background-color: #C5D2D8;   
+   background-color: @grayColor;   
 }
 
 .greenBG {
-   background-color: #1FBB82;   
+   background-color: @greenColor;   
 }
 
 .infoBox {
@@ -178,4 +181,23 @@
     padding-top: 3px;
     border-radius: 20px;
     font-size: 13px;
-}        
+} 
+
+.hide {
+    display: none;
+}       
+
+.show {
+    display: block;
+}
+
+.grayText {
+    font-size: 12px;
+    color:gray;
+} 
+
+.greenText {
+     font-size: 12px;
+     font-weight: bold;
+     color:green;   
+}
