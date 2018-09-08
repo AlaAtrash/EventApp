@@ -15,6 +15,8 @@ export class EventBlockComponent implements OnInit {
 @Input() participents : number;
 @Input() eventAcceptExpiration : number;
 @Input() eventDate: Date;
+@Input() eventDetailPage: boolean;
+@Input() infoBoxV2: string;
 
   	
   constructor() {

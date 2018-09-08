@@ -1,5 +1,9 @@
-import { Component, OnInit} from '@angular/core';
-//import {EventBlockComponent} from '../event-block/event-block.component';
+import { Component, OnInit, Input} from '@angular/core';
+import {EventDetailComponent} from '../event-detail/event-detail.component';
+import {EventChartComponent} from '../event-chart/event-chart.component';
+import {EventFoodDesiredComponent} from '../event-food-desired/event-food-desired.component'
+
+
 
 @Component({
   selector: 'app-all-events',
@@ -9,12 +13,13 @@ import { Component, OnInit} from '@angular/core';
 
 
 export class AllEventsComponent implements OnInit {
-  
+  @Input() showEventDetail :boolean;
   	
 
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
