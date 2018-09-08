@@ -1,0 +1,51 @@
+@import "../../sprite.less";
+
+@eventDetailBG: #F6F6F6;
+.eventDetail {
+	background-color: @eventDetailBG;
+	.content {
+
+		.size {
+			color: #939AAC;
+			font-size: 25px;
+		}
+
+		.commentBlock {
+			margin-top: 30px;
+			.comments {
+				float: left;
+				margin-right: 63%;			
+				::before {
+					content: "";
+					float: left;
+					margin-right: 20px;
+					.bg-ic_comments();
+					transform: translate(0%, -4px);
+				}
+				span {
+					position: relative;
+				}	
+			}
+
+			.goToComment {
+				::after {
+					content: "";
+					float: right;
+					.bg-ic_right_arrow();
+					transform:  translate(0%, 4px);
+				}
+
+				span {
+					position: relative;
+				}	
+			}
+
+		}	
+
+		.BtnsSection {
+			margin-top: 30px;
+   		    margin-left: 23%;
+		}
+
+	}
+}

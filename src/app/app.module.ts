@@ -6,6 +6,8 @@ import { MyAccountComponent } from './my-account/my-account.component';
 import { AllEventsComponent } from './all-events/all-events.component';
 import { EventBlockComponent } from './event-block/event-block.component';
 import { EventDetailComponent } from './event-detail/event-detail.component';
+import { EventChartComponent } from './event-chart/event-chart.component';
+import { EventFoodDesiredComponent } from './event-food-desired/event-food-desired.component';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { EventDetailComponent } from './event-detail/event-detail.component';
     MyAccountComponent,
     AllEventsComponent,
     EventBlockComponent,
-    EventDetailComponent
+    EventDetailComponent,
+    EventChartComponent,
+    EventFoodDesiredComponent
   ],
   imports: [
     BrowserModule,

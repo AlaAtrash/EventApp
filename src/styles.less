@@ -1,5 +1,6 @@
 @greenColor:#1FBB82; ;
 @grayColor: #C5D2D8;
+@text2Color: gray;
 
 .avatar {
 	border-radius: 150px;
@@ -59,11 +60,11 @@
 }
 
 .grayBG {
-   background-color: @grayColor;   
+ background-color: @grayColor;   
 }
 
 .greenBG {
-   background-color: @greenColor;   
+ background-color: @greenColor;   
 }
 
 .infoBox {
@@ -97,11 +98,11 @@
         }
 
         .waiting::before {
-         background-color: #6DC6CD;
-         .bullet(); 
-     }
+           background-color: #6DC6CD;
+           .bullet(); 
+       }
 
-     .decline::before {
+       .decline::before {
         background-color: #E8B71A;
         .bullet();   
     }
@@ -197,23 +198,64 @@
 } 
 
 .greenText {
-     font-size: 12px;
-     font-weight: bold;
-     color:green;   
+   font-size: 12px;
+   font-weight: bold;
+   color:green;   
 }
 
 .rightSideScreen {
-   float: right;
-   padding-right: 6%;
-   width: 35%;
+ float: right;
+ width: 43%;
+ margin-right: -8px;
 
-   .content {
-        width: 100%;
-        margin-left: 24px;
-        border: none;
+ .content {
+     border: none;
+     width: 70%;
+     margin-left: 40px;
 
-        .size {
-            width: 100%
-        }
-   }
+     .size {
+        width: 100%
+    }
 }
+}
+.infoBoxV2 {
+    padding-bottom: 70px !important;
+    margin-top: 35px;
+    padding-top: 30px;
+
+    .eventInfo {
+
+        .name {
+            font-size: 18px !important;
+        }
+    }
+}
+
+.text2 {
+    font-size: 12px;
+    color: @text2Color;
+}
+
+.text3 {
+    font-size: 17px;
+    color: @text2Color;
+}
+
+.green {
+    color : green;
+}
+
+.red {
+    color : red;
+}
+
+.HBtns {
+        margin-bottom: 30px;
+        .rectagleBtnV2Red {
+            float: left;
+        }
+
+        .rectagleBtnV2Gray {
+            margin-left: 130px;
+        }
+    }
