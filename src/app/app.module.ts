@@ -8,6 +8,8 @@ import { EventBlockComponent } from './event-block/event-block.component';
 import { EventDetailComponent } from './event-detail/event-detail.component';
 import { EventChartComponent } from './event-chart/event-chart.component';
 import { EventFoodDesiredComponent } from './event-food-desired/event-food-desired.component';
+import { CommentsComponent } from './comments/comments.component';
+import { CommentBlockComponent } from './comment-block/comment-block.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { EventFoodDesiredComponent } from './event-food-desired/event-food-desir
     EventBlockComponent,
     EventDetailComponent,
     EventChartComponent,
-    EventFoodDesiredComponent
+    EventFoodDesiredComponent,
+    CommentsComponent,
+    CommentBlockComponent
   ],
   imports: [
     BrowserModule,
