@@ -1,6 +1,9 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @greenColor:#1FBB82; ;
 @grayColor: #C5D2D8;
+@rightSideBG: #F6F6F6;
 @text2Color: gray;
+@import "sprite.less";
 
 .avatar {
 	border-radius: 150px;
@@ -205,8 +208,9 @@
 
 .rightSideScreen {
  float: right;
- width: 43%;
+ width: 44%;
  margin-right: -8px;
+ background-color: @rightSideBG;
 
  .content {
      border: none;
@@ -231,6 +235,11 @@
     }
 }
 
+.text1 {
+    font-size: 12px;
+    color : black;
+}
+
 .text2 {
     font-size: 12px;
     color: @text2Color;
@@ -239,6 +248,11 @@
 .text3 {
     font-size: 17px;
     color: @text2Color;
+}
+
+.text4 {
+    font-size: 10px;
+    color: gray;
 }
 
 .green {
@@ -258,4 +272,19 @@
         .rectagleBtnV2Gray {
             margin-left: 130px;
         }
+}
+
+.backArrow {
+    ::before {
+          content: "";
+          float: left;
+          margin-right: 20px;
+          .bg-ic_back_arrow_gray();
+          transform:  translate(0%, 5px);
     }
+}
+
+.rightSideTitle {
+    color: #939AAC;
+    font-size: 25px;
+}
