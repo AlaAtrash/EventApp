@@ -10,6 +10,10 @@ import { EventChartComponent } from './event-chart/event-chart.component';
 import { EventFoodDesiredComponent } from './event-food-desired/event-food-desired.component';
 import { CommentsComponent } from './comments/comments.component';
 import { CommentBlockComponent } from './comment-block/comment-block.component';
+import { MainIngredientComponent } from './main-ingredient/main-ingredient.component';
+
+
+
 
 
 @NgModule({
@@ -22,7 +26,8 @@ import { CommentBlockComponent } from './comment-block/comment-block.component';
     EventChartComponent,
     EventFoodDesiredComponent,
     CommentsComponent,
-    CommentBlockComponent
+    CommentBlockComponent,
+    MainIngredientComponent
   ],
   imports: [
     BrowserModule,

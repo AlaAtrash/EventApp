@@ -8,13 +8,16 @@
 		<app-event-block  infoBoxV2="infoBoxV2" name="Balli Ballerson" isAcceptedEvent="true" eventType="Birthday" eventDate="16/12/2018"
 			participents="12" eventDetailPage="true"></app-event-block>
 
+		
+		<app-main-ingredient></app-main-ingredient> 	
 		<app-event-chart subject="Invited" [acctepted]="15" [waiting]="20" [rejected]="12" totalTitle="Participating"></app-event-chart>	
 
 		<app-event-food-desired></app-event-food-desired>
 
+		
 		<div class="infoBox commentBlock">
 				<div class="comments">
-					<span class="text3"> Comments </span>
+					<span class="text3" i18n> Comments </span>
 				</div>
 				<div routerLink="/comments" class="goToComment">
 					<span class="text3">(6)</span> 
@@ -24,11 +27,11 @@
 		<div class="BtnsSection">
 		<div class="HBtns">
 				<div class="rectagleBtnV2Red">
-						<span i18n> All Events</span>
+						<span i18n> Accept</span>
 				</div>
 
 				<div class="rectagleBtnV2Gray">
-						<span i18n> OPEN Events</span>
+						<span i18n> Decline</span>
 				</div>
 			</div>
 		<div>	
