@@ -12,6 +12,7 @@ import { CommentsComponent } from './comments/comments.component';
 import { CommentBlockComponent } from './comment-block/comment-block.component';
 import { MainIngredientComponent } from './main-ingredient/main-ingredient.component';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { MakeBudgetComponent } from './make-budget/make-budget.component';
 
 
 
@@ -28,7 +29,8 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     EventFoodDesiredComponent,
     CommentsComponent,
     CommentBlockComponent,
-    MainIngredientComponent
+    MainIngredientComponent,
+    MakeBudgetComponent
   ],
   imports: [
     BrowserModule,
