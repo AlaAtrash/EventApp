@@ -11,6 +11,7 @@ import { EventFoodDesiredComponent } from './event-food-desired/event-food-desir
 import { CommentsComponent } from './comments/comments.component';
 import { CommentBlockComponent } from './comment-block/comment-block.component';
 import { MainIngredientComponent } from './main-ingredient/main-ingredient.component';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 
 
@@ -32,6 +33,7 @@ import { MainIngredientComponent } from './main-ingredient/main-ingredient.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
