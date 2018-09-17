@@ -4,11 +4,11 @@
 		<div class="size">
 			<div class="HBtns">
 				<div class="rectagleBtnV2Red">
-						<span i18n> All Events</span>
+					<span i18n> All Events</span>
 				</div>
 
 				<div class="rectagleBtnV2Gray">
-						<span i18n> OPEN Events</span>
+					<span i18n> OPEN Events</span>
 				</div>
 			</div>
 
@@ -20,10 +20,22 @@
 
 			<app-event-block name="Max Ballerson" isAcceptedEvent="true" eventType="Marrige" event-date="16/10/2018"
 			participents="50"></app-event-block>
-			<div class="rectagleBtnV1 createEvent">
+			<div class="rectagleBtnV1 createEvent" (click)="openCreateEvent(content)">
 				<span>+ Create Event</span>
 			</div>
 		</div>
 		
 	</div>
 </div>
+
+<ng-template #content let-modal>
+	<div class="modal-header">
+		<h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+	</div>
+	<div class="modal-body">
+		body
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-outline-dark">Save</button>
+	</div>
+</ng-template>
