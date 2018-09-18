@@ -28,14 +28,34 @@
 	</div>
 </div>
 
-<ng-template #content let-modal>
+<ng-template #content let-modal class="createEventModal">
 	<div class="modal-header">
-		<h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+		<h4 class="modal-title" id="modal-basic-title">
+			<span i18n> Create Event</span>
+		</h4>
+		<div class="close">
+			X
+		</div>
 	</div>
 	<div class="modal-body">
-		body
+		<div class="">
+			<div class="inputBox">
+				<input placeholder="Event Name" type="text" name="">
+			</div>
+			<div class="inputBox">
+				<input placeholder="Capacity" type="text" name="">
+			</div>
+			<div class="inputBox">
+				<input placeholder="Event Date" type="text" onfocus="(this.type='date')">
+			</div>
+			<div class="inputBox">
+				<input placeholder="Closing Date" type="text" onfocus="(this.type='date')">
+			</div>
+		</div>	
 	</div>
 	<div class="modal-footer">
-		<button type="button" class="btn btn-outline-dark">Save</button>
+		<div class="rectagleBtnV1">
+				<span>Submit</span>
+			</div>
 	</div>
 </ng-template>
