@@ -4,11 +4,11 @@
 		<div class="size">
 			<div class="HBtns">
 				<div class="rectagleBtnV2Red">
-						<span i18n> All Events</span>
+					<span i18n> All Events</span>
 				</div>
 
 				<div class="rectagleBtnV2Gray">
-						<span i18n> OPEN Events</span>
+					<span i18n> OPEN Events</span>
 				</div>
 			</div>
 
@@ -20,10 +20,42 @@
 
 			<app-event-block name="Max Ballerson" isAcceptedEvent="true" eventType="Marrige" event-date="16/10/2018"
 			participents="50"></app-event-block>
-			<div class="rectagleBtnV1 createEvent">
+			<div class="rectagleBtnV1 createEvent" (click)="openCreateEvent(content)">
 				<span>+ Create Event</span>
 			</div>
 		</div>
 		
 	</div>
 </div>
+
+<ng-template #content let-modal class="createEventModal">
+	<div class="modal-header">
+		<h4 class="modal-title" id="modal-basic-title">
+			<span i18n> Create Event</span>
+		</h4>
+		<div class="close">
+			X
+		</div>
+	</div>
+	<div class="modal-body">
+		<div class="">
+			<div class="inputBox">
+				<input placeholder="Event Name" type="text" name="">
+			</div>
+			<div class="inputBox">
+				<input placeholder="Capacity" type="text" name="">
+			</div>
+			<div class="inputBox">
+				<input placeholder="Event Date" type="text" onfocus="(this.type='date')">
+			</div>
+			<div class="inputBox">
+				<input placeholder="Closing Date" type="text" onfocus="(this.type='date')">
+			</div>
+		</div>	
+	</div>
+	<div class="modal-footer">
+		<div class="rectagleBtnV1">
+				<span>Submit</span>
+			</div>
+	</div>
+</ng-template>

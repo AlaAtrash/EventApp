@@ -11,8 +11,12 @@ import { EventFoodDesiredComponent } from './event-food-desired/event-food-desir
 import { CommentsComponent } from './comments/comments.component';
 import { CommentBlockComponent } from './comment-block/comment-block.component';
 import { MainIngredientComponent } from './main-ingredient/main-ingredient.component';
-import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { MakeBudgetComponent } from './make-budget/make-budget.component';
+import { MatDialogModule} from '@angular/material/dialog';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+
 
 
 
@@ -35,7 +39,8 @@ import { MakeBudgetComponent } from './make-budget/make-budget.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

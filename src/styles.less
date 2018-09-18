@@ -1,4 +1,6 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
 @greenColor:#1FBB82; ;
 @grayColor: #C5D2D8;
 @rightSideBG: #F6F6F6;
@@ -24,7 +26,7 @@
     width: 140px;
     height: 23px;
     margin-left: 146px;
-    padding-top: 5px;
+
 }  
 
 .rectagleBtnV1 {
@@ -38,7 +40,7 @@
     height: 28px;
     width: 116px;
     border-radius: 5px;
-    padding-top: 8px;
+    padding-top: 4px;
 } 
 .rectagleBtnV2Red {
     .btnV2_V3spec();
@@ -63,11 +65,11 @@
 }
 
 .grayBG {
-   background-color: @grayColor;   
+ background-color: @grayColor;   
 }
 
 .greenBG {
-   background-color: @greenColor;   
+ background-color: @greenColor;   
 }
 
 .infoBox {
@@ -101,11 +103,11 @@
         }
 
         .waiting::before {
-         background-color: #6DC6CD;
-         .bullet(); 
-     }
+           background-color: #6DC6CD;
+           .bullet(); 
+       }
 
-     .decline::before {
+       .decline::before {
         background-color: #E8B71A;
         .bullet();   
     }
@@ -180,7 +182,6 @@
 }
 
 .eventActionBtns {
-    height: 21px;
     width: 85px;
     padding-top: 3px;
     border-radius: 20px;
@@ -201,23 +202,23 @@
 } 
 
 .greenText {
- font-size: 12px;
- font-weight: bold;
- color:green;   
+   font-size: 12px;
+   font-weight: bold;
+   color:green;   
 }
 
 .rightSideScreen {
-   float: right;
-   width: 44%;
-   margin-right: -8px;
-   background-color: @rightSideBG;
+ float: right;
+ width: 44%;
+ margin-right: -8px;
+ background-color: @rightSideBG;
 
-   .content {
-       border: none;
-       width: 70%;
-       margin-left: 40px;
+ .content {
+     border: none;
+     width: 70%;
+     margin-left: 40px;
 
-       .size {
+     .size {
         width: 100%
     }
 }
@@ -297,20 +298,38 @@
 }
 .inputBox {
     input {
-        width: 95%;
+        width: 100%;
         .barBlockSize ();
     }
     
     input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
       color:@grayColor;
   }
-    input::-moz-placeholder { /* Firefox 19+ */
+  input::-moz-placeholder { /* Firefox 19+ */
       color: @grayColor;
   }
-    input:-ms-input-placeholder { /* IE 10+ */
+  input:-ms-input-placeholder { /* IE 10+ */
       color: @grayColor;
   }
-    input:-moz-placeholder { /* Firefox 18- */
+  input:-moz-placeholder { /* Firefox 18- */
       color: @grayColor;
   }    
+}
+
+.modal-backdrop.fade
+{
+   opacity: 0.5;
+}
+.modal-open .modal
+{
+   opacity: 1;
+}
+
+input[type=date],
+input[type=datetime-local],
+input[type=month], 
+input[type=time]
+{
+   -webkit-appearance: menulist;
+   -moz-appearance:    menulist;
 }
