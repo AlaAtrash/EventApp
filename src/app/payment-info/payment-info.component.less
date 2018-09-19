@@ -1,0 +1,27 @@
+@import "../../sprite.less";
+
+.paymentInfoPage {
+	.backArrow {
+		padding-bottom: 12px;
+		border-bottom: solid 1px gray;
+	}
+
+	.creditCardInfo {
+		background-color: #F53B50;
+		background-color: #F53B50;
+	    margin-top: 20px;
+	    margin-bottom: 20px;
+	    padding: 10px;
+	    color: white;
+		::after {
+			content: "";
+			float: right;
+			.bg-ic_right_arrow();
+			transform: translate(-30px, 6px);
+		}
+
+		span {
+			position: relative;
+		}	
+	}
+}

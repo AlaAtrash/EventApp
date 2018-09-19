@@ -40,6 +40,25 @@
 					<span i18n> Edit </span>
 				</div>
 			</div>
-		</div>		
+		</div>
+
+		<div [hidden]="paid">
+			<div class="">
+				<span i18n>paid</span>
+			</div>
+			<div class="price">
+				$125
+			</div>	
+		</div>	
+
+		<div [hidden]="unpaied">
+			<div>
+				<span i18n>unpaid</span>
+			</div>
+			<div class="price">
+				$120
+			</div>	
+		</div>	
+
 	</div>
 </div>
