@@ -30,7 +30,7 @@
 
 		<div [hidden]="notAcceptedEvent">
 			<div class="acceptedState greenText">
-					<span i18n>Accepted </span>
+				<span i18n>Accepted </span>
 			</div>	
 			<div class="acceptedEvent" [hidden]="eventDetailPage">
 				<div class="accept rectagleBtnV2Red eventActionBtns">
@@ -42,23 +42,22 @@
 			</div>
 		</div>
 
-		<div [hidden]="paid">
-			<div class="">
+		<div [hidden]="paid" class="paid">
+			<div class="status">
 				<span i18n>paid</span>
-			</div>
+			</div>	
 			<div class="price">
-				$125
+				{{paidPrice}}
 			</div>	
 		</div>	
 
-		<div [hidden]="unpaied">
-			<div>
-				<span i18n>unpaid</span>
-			</div>
+		<div [hidden]="unpaid" class="unpaid">
+			<div class="status">
+				<span i18n class="status">unpaid</span>			
+			</div>	
 			<div class="price">
-				$120
+				{{unpaidPrice}}
 			</div>	
 		</div>	
-
 	</div>
 </div>
