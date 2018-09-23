@@ -6,22 +6,91 @@
 		border-bottom: solid 1px gray;
 	}
 
-	.creditCardInfo {
+	.goTOcreditCardInfo {
 		background-color: #F53B50;
 		background-color: #F53B50;
-	    margin-top: 20px;
-	    margin-bottom: 20px;
-	    padding: 10px;
-	    color: white;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		padding: 10px;
+		color: white;
 		::after {
 			content: "";
 			float: right;
-			.bg-ic_right_arrow();
+			.bg-ic_arrow_right();
 			transform: translate(-30px, 6px);
 		}
 
 		span {
 			position: relative;
 		}	
+	}
+
+	.creditCardInfo {
+		margin-top: 30px;
+		.card {
+			color: white;
+			width: 300px;
+			height: 150px;
+			background-color: #1FBB82;
+			padding: 20px;
+			margin: auto;
+
+			.backName {
+				font-weight: bold;
+			}
+
+			.cardNum {
+				font-weight: bold;
+			}
+
+			.cardHolderAndType {
+				position: relative;
+				margin-top: 24px;
+				.cardHolder {
+
+				}
+
+				.cardDate {
+					font-size: 12px;
+				}
+
+				.cardType {
+					float: right;
+					font-size: 30px;
+					font-family: serif;
+					position: absolute;
+					top: 0px;
+					right: -5px;
+
+				}
+			}
+		}
+
+		.cardForm {
+			margin-top: 40px;
+			.cardBlkInfo {
+				position: relative;
+				font-weight: bold;
+				padding-bottom: 10px;
+				border-bottom: 1px solid gray;
+				margin-bottom: 20px;
+				.info {
+					width: 50%;
+					color: gray;
+					font-weight: bold;
+					color : gray;
+				}
+				.value {
+					color : black;
+					position: absolute;
+					top: 0px;
+					right: 0px;
+				}
+			}
+		}
+
+		.rectagleBtnV3 {
+			margin-bottom: 20px;
+		}
 	}
 }
