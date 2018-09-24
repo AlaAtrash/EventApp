@@ -16,6 +16,8 @@ import { MakeBudgetComponent } from './make-budget/make-budget.component';
 import { MatDialogModule} from '@angular/material/dialog';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PaymentInfoComponent } from './payment-info/payment-info.component';
+import { EventProposalComponent } from './event-proposal/event-proposal.component';
+import { ProposalBlockComponent } from './proposal-block/proposal-block.component';
 
 
 
@@ -36,7 +38,9 @@ import { PaymentInfoComponent } from './payment-info/payment-info.component';
     CommentBlockComponent,
     MainIngredientComponent,
     MakeBudgetComponent,
-    PaymentInfoComponent
+    PaymentInfoComponent,
+    EventProposalComponent,
+    ProposalBlockComponent
   ],
   imports: [
     BrowserModule,
