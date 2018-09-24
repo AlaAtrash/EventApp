@@ -1,0 +1,110 @@
+<app-all-events showEventDetail="false" class="rightSideScreen"></app-all-events>
+<div class="paymentInfoPage">
+	<div class="content">
+		<div class="size">	
+			<div class="title backArrow">
+				<div i18n> Payment Info</div>
+			</div>
+
+			<div class="creditCardInfo" [hidden]="creditCardInfo">
+				<div class="card">
+					<div class="cardName">
+						{{cardName}}
+					</div>
+					<div class="cardNum">
+						{{cardNum}}
+					</div>
+					<div class="cardHolderAndType">
+						<div class="cardHolder">
+							{{cardHolder}}
+						</div>
+						<div class="cardDate">
+							<span i18n>Expire date:</span> {{cardDate}}
+						</div>
+						<div class="cardType">
+							{{cardType}}
+						</div>	
+					</div>
+				</div>
+
+				<div class="cardForm">
+					
+					<div class="cardBlkInfo">
+						<div class="info">
+							<span i18n>Bank</span>
+						</div>
+						<div class="value">
+							{{cardName}}
+						</div>
+					</div>
+
+					<div class="cardBlkInfo">
+						<div class="info">
+							<span i18n>Card Holder</span>
+						</div>
+						<div class="value">
+							{{cardHolder}}
+						</div>
+					</div>	
+
+
+					<div class="cardBlkInfo">
+						<div class="info">
+							<span i18n>Card Number</span>
+						</div>
+						<div class="value">
+							{{cardNum}}
+						</div>
+					</div>	
+
+
+
+					<div class="cardBlkInfo">
+						<div class="info">
+							<span i18n>Expiry Date</span>
+						</div>
+						<div class="value">
+							{{cardDate}}
+						</div>
+					</div>	
+
+
+					<div class="cardBlkInfo">
+						<div class="info">
+							<span i18n>CVC</span>
+						</div>
+						<div class="value">
+							***
+						</div>
+					</div>				
+				</div>	
+
+				<div class="rectagleBtnV3">
+					<span> Edit Card </span>
+				</div>
+
+				<div class="rectagleBtnV1">
+					<span>Add card</span>
+				</div>	
+
+			</div>
+
+			<div [hidden]="payments"> 
+				<div class="goTOcreditCardInfo" (click)="goTOcreditCardInfo()">
+					<span i18n> Credit card info</span>
+				</div>	
+
+				<app-event-block name="Balli Ballerson" isAcceptedEvent="true" notAcceptedEvent="true" paid="true" unpaidPrice="$125" eventType="Birthday" eventDate="16/12/2018"
+				participents="12"></app-event-block>
+
+				<app-event-block name="Balli Ballerson" isAcceptedEvent="true" notAcceptedEvent="true" paid="true" unpaidPrice="$200" eventType="Birthday" eventDate="16/12/2018"
+				participents="12"></app-event-block>
+
+				<app-event-block name="Balli Ballerson" isAcceptedEvent="true" notAcceptedEvent="true" unpaid="true" paidPrice="$250" eventType="Birthday" eventDate="16/12/2018"
+				participents="12"></app-event-block>
+
+			</div>
+		</div>
+
+	</div>
+</div>	 			

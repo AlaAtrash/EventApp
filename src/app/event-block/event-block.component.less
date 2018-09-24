@@ -1,6 +1,8 @@
+@import "../../sprite.less";
+
 .block {
 	margin-bottom: 30px;
-	padding-bottom: 25px;
+	padding-bottom: 35px;
 	.eventInfo {
 		float: left;
 
@@ -49,6 +51,42 @@
 		.decline {
 
 		}
-	}	
+
+
+		.paid {
+			color : #1FBB82;
+			margin-bottom: 33px;
+			.status {	
+				position: relative;
+				::before {
+					content: "";
+					.bg-ic_tick_sm();
+					float: left;
+					background-repeat: no-repeat;
+					left: -17px;
+					top: 10px;
+					position: absolute;
+				}
+			}
+
+			.price {
+				font-weight: bold;
+				font-size: 20px;
+			}	
+		}
+
+		.unpaid {
+			color : red;
+			margin-bottom: 33px;
+			.status {
+				
+			}
+			.price {
+				font-weight: bold;
+				font-size: 20px;
+			}
+		}	
+	}
+
 }
 

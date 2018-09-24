@@ -15,6 +15,7 @@ import { MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { MakeBudgetComponent } from './make-budget/make-budget.component';
 import { MatDialogModule} from '@angular/material/dialog';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PaymentInfoComponent } from './payment-info/payment-info.component';
 
 
 
@@ -34,7 +35,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CommentsComponent,
     CommentBlockComponent,
     MainIngredientComponent,
-    MakeBudgetComponent
+    MakeBudgetComponent,
+    PaymentInfoComponent
   ],
   imports: [
     BrowserModule,

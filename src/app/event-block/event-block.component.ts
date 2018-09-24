@@ -17,6 +17,10 @@ export class EventBlockComponent implements OnInit {
 @Input() eventDate: Date;
 @Input() eventDetailPage: boolean;
 @Input() infoBoxV2: string;
+@Input() unpaid : boolean;
+@Input() paid : boolean;
+@Input() paidPrice: string;
+@Input() unpaidPrice: string;
 
   	
   constructor() {
