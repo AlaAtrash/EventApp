@@ -18,6 +18,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PaymentInfoComponent } from './payment-info/payment-info.component';
 import { EventProposalComponent } from './event-proposal/event-proposal.component';
 import { ProposalBlockComponent } from './proposal-block/proposal-block.component';
+import { MenuDetailsComponent } from './menu-details/menu-details.component';
+import { PersonalBudgetComponent } from './personal-budget/personal-budget.component';
 
 
 
@@ -40,7 +42,9 @@ import { ProposalBlockComponent } from './proposal-block/proposal-block.componen
     MakeBudgetComponent,
     PaymentInfoComponent,
     EventProposalComponent,
-    ProposalBlockComponent
+    ProposalBlockComponent,
+    MenuDetailsComponent,
+    PersonalBudgetComponent
   ],
   imports: [
     BrowserModule,

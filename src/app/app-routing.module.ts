@@ -12,7 +12,7 @@ export const routes: Routes = [
   { path: 'myaccount', component: MyAccountComponent },
   { path: 'allevents', component: AllEventsComponent },
   { path: 'comments', component: CommentsComponent },
-  { path: 'paymentinfo', component:PaymentInfoComponent}
+  { path: 'paymentinfo', component:PaymentInfoComponent},
   { path: 'eventproposal', component:EventProposalComponent}
 ];
 
