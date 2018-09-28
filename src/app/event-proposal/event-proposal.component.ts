@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {ProposalBlockComponent} from '../proposal-block/proposal-block.component';
 import {MenuDetailsComponent} from '../menu-details/menu-details.component';
-import {PersonalBudgetComponent} from '../personal-budget/personal-budget.component'
+import {PersonalBudgetComponent} from '../personal-budget/personal-budget.component';
+import {OrderListComponent} from '../order-list/order-list.component'
 
 
 @Component({
