@@ -20,6 +20,7 @@ import { EventProposalComponent } from './event-proposal/event-proposal.componen
 import { ProposalBlockComponent } from './proposal-block/proposal-block.component';
 import { MenuDetailsComponent } from './menu-details/menu-details.component';
 import { PersonalBudgetComponent } from './personal-budget/personal-budget.component';
+import { OrderListComponent } from './order-list/order-list.component';
 
 
 
@@ -44,7 +45,8 @@ import { PersonalBudgetComponent } from './personal-budget/personal-budget.compo
     EventProposalComponent,
     ProposalBlockComponent,
     MenuDetailsComponent,
-    PersonalBudgetComponent
+    PersonalBudgetComponent,
+    OrderListComponent
   ],
   imports: [
     BrowserModule,
